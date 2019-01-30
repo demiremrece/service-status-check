@@ -1,0 +1,36 @@
+{
+  "name": "service-status-check",
+  "version": "1.0.0",
+  "description": "This node module will check the given service url using standard http request and informs the user(s) via mail.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demiremrece/service-status-check.git"
+  },
+  "keywords": [
+    "service",
+    "status",
+    "checker",
+    "mail"
+  ],
+  "author": "Emre Demir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/demiremrece/service-status-check/issues"
+  },
+  "homepage": "https://github.com/demiremrece/service-status-check#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "nodemailer": "^5.1.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^5.12.1",
+    "eslint-config-google": "^0.11.0"
+  }
+}
