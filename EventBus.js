@@ -36,9 +36,11 @@ class EventBus {
             ],
         };
 
+        if (!config) config = defaults;
+
         this.options = config.options || defaults.options;
-        this.sender = config.mail.sender || defaults.mail.sender;
-        this.to = config.mail.to || defaults.mail.to;
+        this.sender = !config.mail ? defaults.mail.sender : config.mail.sender;
+        this.to = !config.mail ? defaults.mail.to : config.mail.to;
         this.services = config.services || [];
 
 
@@ -116,10 +118,6 @@ class EventBus {
                 });
         });
     }
-
-    // reset() {
-    //     this.listeners = {};
-    // }
 }
 
 module.exports = EventBus;
