@@ -2,7 +2,7 @@ const EventBus = require('./EventBus');
 
 let instance = null;
 
-class HealthChecker {
+class ApiHealthChecker {
 
     constructor(config) {
         // Make this a singleton.
@@ -20,25 +20,4 @@ class HealthChecker {
     }
 }
 
-// const config = {
-//     mail: {
-//         sender: {
-//             user: "sender@gmail.com",
-//             pass: "password"
-//         },
-//         to: "to@gmail.com"
-//     },
-//     services: [
-//         {
-//             name: "My service",
-//             url: "service.adress.com/get"
-//         }
-//     ],
-//     options: {
-//         interval: 0.5
-//     }
-// };
-// let myChecker = new HealthChecker(config);
-// myChecker.start();
-
-module.exports = HealthChecker;
+module.exports = ApiHealthChecker;
