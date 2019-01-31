@@ -1,7 +1,7 @@
 {
   "name": "service-status-check",
-  "version": "1.0.0",
-  "description": "This node module will check the given service url using standard http request and informs the user(s) via mail.",
+  "version": "1.0.1",
+  "description": "This node module will check the given service url using standard http get request and informs the user(s) via mail.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
